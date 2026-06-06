@@ -3,97 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anwar Parker | Resume & Portfolio</title>
+  <meta name="description" content="Anwar Parker — Senior DevOps Engineer specialising in CI/CD, Infrastructure as Code, and platform reliability. 8+ years at impact.com." />
+  <meta name="author" content="Anwar Parker" />
+  <meta property="og:title" content="Anwar Parker | Senior DevOps Engineer" />
+  <meta property="og:description" content="Senior DevOps Engineer with 8+ years building scalable CI/CD pipelines and platform infrastructure at impact.com." />
+  <meta property="og:type" content="website" />
+  <title>Anwar Parker | Senior DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand">AP</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
   <header class="hero" id="top">
     <div class="container hero-content">
-      <div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
         <h1>Anwar Parker</h1>
         <p class="title">Senior DevOps Engineer</p>
-        <p class="location">Cape Town, Western Cape, South Africa</p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Cape Town, Western Cape, South Africa</p>
         <div class="hero-links">
-          <a href="https://www.linkedin.com/in/anwar-parker-113a4511a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/AnwarParker" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="button" href="resume.pdf" download>Download Resume</a>
+          <a href="https://www.linkedin.com/in/anwar-parker-113a4511a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/AnwarParker" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="mailto:anwarparker.personal@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a class="button primary" href="resume.pdf" download><i class="fa-solid fa-download"></i> Download Resume</a>
         </div>
       </div>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">Toggle Theme</button>
     </div>
   </header>
 
   <main>
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="container">
-        <h2>About Me</h2>
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
         <p>
-          Senior DevOps Engineer with 8+ years at impact.com, progressing from Customer Success through Quality Assurance to Build Engineering.
+          Senior DevOps Engineer with 8+ years at impact.com, progressing from Quality Assurance to Build Engineering and DevOps leadership.
           I hold a B.Com (Hons) in Information Systems from the University of Cape Town and a B.Com (General) majoring in Management and Information Systems from the University of the Western Cape.
-          I specialise in CI/CD pipelines, infrastructure as code, and automation — delivering scalable, reliable platform solutions for distributed teams.
+          I specialise in CI/CD pipelines, GitOps with ArgoCD, Helm-based deployments to GKE, and infrastructure automation on Google Cloud Platform (GCP) — delivering scalable, reliable platform solutions for distributed teams.
         </p>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="highlights" class="section highlights-section reveal">
       <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <h3>Senior DevOps Engineer</h3>
-            <p class="meta">impact.com • February 2026–Present</p>
-            <p>Leading DevOps initiatives, CI/CD pipeline management, infrastructure automation, and platform reliability for distributed engineering teams.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Build Engineer II</h3>
-            <p class="meta">impact.com • February 2023–January 2026</p>
-            <p>SME on squad tools and technologies. Automated recurring manual tasks, optimised repetitive processes, maintained and improved continuous integration pipelines, performed code reviews, and collaborated with distributed teams on quarterly objectives.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Build Engineer I</h3>
-            <p class="meta">impact.com • April 2022–March 2023</p>
-            <p>Developed, tested and maintained platform software. Built unit, functional and integration tests. Responded to alerts, debugged and resolved technical issues. Researched and prototyped new technologies.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Software Quality Assurance Analyst</h3>
-            <p class="meta">impact.com • August 2020–April 2022</p>
-            <p>Designed, coordinated and executed testing strategies. Maintained test case repositories, tracked software defects, and provided QA expertise throughout the development life cycle. Ensured SLAs were met and exceeded.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Junior Software Quality Assurance Analyst</h3>
-            <p class="meta">impact.com • June 2018–August 2020</p>
-            <p>Performed QA checks during internal developments, prepared test scenarios and scripts, executed tests, coordinated defect re-testing, and maintained test plan documentation including activity schedules and progress charts.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Consultant / Junior Business Analyst</h3>
-            <p class="meta">FCJ Consulting • March 2018–May 2018</p>
-            <p>Data analysis and reporting on strategic client initiatives. Business process mapping, test case definition, testing execution, and first-line support management.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Customer Success Specialist</h3>
-            <p class="meta">Impact • November 2017–March 2018</p>
-            <p>Delivered support via email, chat and telephone. Trained clients on the platform, troubleshot technical issues, assisted with regression testing, and managed the Global Tracking Investigation Process.</p>
-          </article>
+        <h2><i class="fa-solid fa-chart-line"></i> Career Highlights</h2>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-number">8+</div>
+            <div class="highlight-label">Years at impact.com</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-number">5</div>
+            <div class="highlight-label">Role Promotions</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-number">CI/CD</div>
+            <div class="highlight-label">Pipeline Specialist</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-number">GKE</div>
+            <div class="highlight-label">Kubernetes on GCP</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="experience" class="section reveal">
       <div class="container">
-        <h2>Skills</h2>
+        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Senior DevOps Engineer</h3>
+            <p class="meta"><i class="fa-solid fa-building"></i> impact.com • February 2026–Present</p>
+            <p>Leading DevOps initiatives with a GitOps approach using ArgoCD. Managing CI/CD pipelines, deploying workloads to GKE via Helm charts, and driving infrastructure automation and platform reliability on Google Cloud Platform (GCP).</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Build Engineer II</h3>
+            <p class="meta"><i class="fa-solid fa-building"></i> impact.com • February 2023–January 2026</p>
+            <p>SME on squad tools and technologies. Automated recurring manual tasks, optimised repetitive processes, maintained CI/CD pipelines, performed code reviews, and deployed containerised workloads to GKE using Helm and ArgoCD.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Build Engineer I</h3>
+            <p class="meta"><i class="fa-solid fa-building"></i> impact.com • April 2022–March 2023</p>
+            <p>Developed, tested and maintained platform software. Built unit, functional and integration tests. Responded to alerts, debugged and resolved technical issues. Researched and prototyped new technologies.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Software Quality Assurance Analyst</h3>
+            <p class="meta"><i class="fa-solid fa-building"></i> impact.com • August 2020–April 2022</p>
+            <p>Designed, coordinated and executed testing strategies. Maintained test case repositories, tracked software defects, and provided QA expertise throughout the development life cycle. Ensured SLAs were met and exceeded.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <h3>Junior Software Quality Assurance Analyst</h3>
+            <p class="meta"><i class="fa-solid fa-building"></i> impact.com • June 2018–August 2020</p>
+            <p>Performed QA checks during internal developments, prepared test scenarios and scripts, executed tests, coordinated defect re-testing, and maintained test plan documentation including activity schedules and progress charts.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2><i class="fa-solid fa-code"></i> Skills</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>DevOps & Engineering</h3>
+            <h3><i class="fa-solid fa-gears"></i> DevOps & Engineering</h3>
             <ul>
-              <li>Continuous Integration (CI)</li>
-              <li>Continuous Delivery (CD)</li>
+              <li>CI/CD Pipelines</li>
+              <li>GitOps (ArgoCD)</li>
+              <li>Helm Charts</li>
               <li>Infrastructure as Code (IaC)</li>
-              <li>Build Automation</li>
               <li>Platform Engineering</li>
             </ul>
           </div>
           <div class="skill-card">
-            <h3>Quality Assurance</h3>
+            <h3><i class="fa-solid fa-cloud"></i> Cloud & Containers</h3>
+            <ul>
+              <li>Google Cloud Platform (GCP)</li>
+              <li>Google Kubernetes Engine (GKE)</li>
+              <li>Docker / Containers</li>
+              <li>Kubernetes</li>
+              <li>Build Automation</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fa-solid fa-vial"></i> Quality Assurance</h3>
             <ul>
               <li>Test Planning & Strategy</li>
               <li>Manual & Automated Testing</li>
@@ -103,17 +160,17 @@
             </ul>
           </div>
           <div class="skill-card">
-            <h3>Tools & Platforms</h3>
+            <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
             <ul>
               <li>Git / GitHub</li>
               <li>JIRA</li>
-              <li>ZenDesk</li>
               <li>Linux</li>
-              <li>Salesforce</li>
+              <li>ArgoCD</li>
+              <li>Terraform</li>
             </ul>
           </div>
           <div class="skill-card">
-            <h3>Soft Skills</h3>
+            <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
             <ul>
               <li>Communication</li>
               <li>Problem Solving</li>
@@ -126,23 +183,27 @@
       </div>
     </section>
 
-    <section id="education" class="section">
+    <section id="education" class="section reveal">
       <div class="container">
-        <h2>Education</h2>
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
         <div class="timeline">
           <article class="timeline-item">
+            <span class="timeline-dot"></span>
             <h3>University of Cape Town</h3>
             <p class="meta">Certification, Data Analysis • 2019</p>
           </article>
           <article class="timeline-item">
+            <span class="timeline-dot"></span>
             <h3>University of Cape Town</h3>
             <p class="meta">Certification, Business Systems Analysis (BSA) • 2017</p>
           </article>
           <article class="timeline-item">
+            <span class="timeline-dot"></span>
             <h3>University of Cape Town</h3>
             <p class="meta">Bachelor's Degree (Honours), Information Systems • 2016</p>
           </article>
           <article class="timeline-item">
+            <span class="timeline-dot"></span>
             <h3>University of the Western Cape</h3>
             <p class="meta">Bachelor's Degree, B.Com in Management and Information Systems • 2012–2015</p>
           </article>
@@ -150,46 +211,47 @@
       </div>
     </section>
 
-    <section id="certifications" class="section">
+    <section id="certifications" class="section reveal">
       <div class="container">
-        <h2>Certifications</h2>
+        <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>Certified Marketing Technologist</h3>
+            <h3><i class="fa-solid fa-award"></i> Certified Marketing Technologist</h3>
           </div>
           <div class="skill-card">
-            <h3>Business Analysis Fundamentals</h3>
+            <h3><i class="fa-solid fa-award"></i> Business Analysis Fundamentals</h3>
           </div>
           <div class="skill-card">
-            <h3>QA Manual Software Testing</h3>
+            <h3><i class="fa-solid fa-award"></i> QA Manual Software Testing</h3>
           </div>
           <div class="skill-card">
-            <h3>Linux Mastery</h3>
+            <h3><i class="fa-solid fa-award"></i> Linux Mastery</h3>
             <p>Master the Linux Command Line</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="awards" class="section">
+    <section id="awards" class="section reveal">
       <div class="container">
-        <h2>Honours & Awards</h2>
+        <h2><i class="fa-solid fa-trophy"></i> Honours & Awards</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>Honours Innovation Scholarship</h3>
+            <h3><i class="fa-solid fa-medal"></i> Honours Innovation Scholarship</h3>
           </div>
           <div class="skill-card">
-            <h3>Best Paper Award — SACLA 2017</h3>
+            <h3><i class="fa-solid fa-medal"></i> Best Paper Award — SACLA 2017</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="publications" class="section">
+    <section id="publications" class="section reveal">
       <div class="container">
-        <h2>Publications</h2>
+        <h2><i class="fa-solid fa-book"></i> Publications</h2>
         <div class="timeline">
           <article class="timeline-item">
+            <span class="timeline-dot"></span>
             <h3>The iGeneration as Students</h3>
             <p>Exploring the Relative Access, Use of, and Perceptions of IT in Higher Education</p>
           </article>
@@ -200,7 +262,11 @@
 
   <footer class="footer">
     <div class="container">
-      <p>Contact: <a href="mailto:anwarparker.personal@gmail.com">anwarparker.personal@gmail.com</a> | <a href="https://www.linkedin.com/in/anwar-parker-113a4511a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <div class="footer-links">
+        <a href="mailto:anwarparker.personal@gmail.com"><i class="fa-solid fa-envelope"></i> anwarparker.personal@gmail.com</a>
+        <a href="https://www.linkedin.com/in/anwar-parker-113a4511a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/AnwarParker" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
       <p>&copy; <span id="year"></span> Anwar Parker</p>
     </div>
   </footer>
