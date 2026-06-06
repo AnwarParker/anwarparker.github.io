@@ -79,3 +79,18 @@ const highlightNav = () => {
 };
 
 window.addEventListener('scroll', highlightNav);
+
+// ===== Geeky IT Quote of the Day =====
+const geekyQuotes = [
+  "It works on my machine — so we ship the machine.",
+  "There are only 10 types of people: those who understand binary and those who don't.",
+  "A good programmer is someone who looks both ways before crossing a one-way street.",
+  "Why do DevOps engineers make great DJs? They know how to handle continuous delivery.",
+  "In order to understand recursion, one must first understand recursion."
+];
+
+const quoteEl = document.getElementById('geeky-quote');
+if (quoteEl) {
+  quoteEl.textContent = geekyQuotes[Math.floor(Math.random() * geekyQuotes.length)];
+}
+
